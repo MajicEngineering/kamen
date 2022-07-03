@@ -1995,6 +1995,7 @@ textarea.form-control {
 }
 
 .form-group {
+  margin-left: 500px  ;
   margin-bottom: 1rem;
 }
 

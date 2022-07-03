@@ -29,6 +29,7 @@ body {
 }
 
 .custom_heading-container {
+  margin-left: 420px ;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

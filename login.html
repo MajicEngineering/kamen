@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Kontakt</title>
+  <title>O NAMA</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css"
@@ -32,6 +32,73 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
+
+
+  <!-- responsive style -->
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #10e7f4;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>                                                                                                                     
 </head>
 
 <body class="sub_page">
@@ -40,25 +107,7 @@
     <header class="header_section">
       <div class="container">
         
-        <!-- top header (removed)-->
-        <!-- <div class="top_contact-container">
-          <div class="tel_container">
-            <a href="">
-              <img src="images/telephone-symbol-button.png" alt=""> Call : +385 99 999 9999
-            </a>
-          </div>
-          <div class="social-container">
-            <a href="">
-              <img src="images/fb.png" alt="" class="s-1">
-            </a>
-            <a href="">
-              <img src="images/twitter.png" alt="" class="s-2">
-            </a>
-            <a href="">
-              <img src="images/instagram.png" alt="" class="s-3">
-            </a>
-          </div>
-        </div> -->
+       
       </div>
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
@@ -80,7 +129,7 @@
                   <a class="nav-link" href="index.html">Naslovnica <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html"> O Nama </a>
+                  <a class="nav-link" href="about.html"> O nama </a>
                 </li>
                 <!-- <li class="nav-item">
                   <a class="nav-link" href="medicine.html"> Medicine </a>
@@ -107,6 +156,7 @@
                   </span>
                 </a>
               </div>
+
             </div>
           </div>
 
@@ -117,67 +167,45 @@
   </div>
 
 
-
-  <!-- contact section -->
-  <section class="contact_section layout_padding">
+  <!-- login section -->
+  <section class="about_section layout_padding">
     <div class="container">
-      <div class="row">
-        <div class="custom_heading-container ">
-          <h2>
-            Kontaktirajte nas
-          </h2>
-        </div>
+      <h2>Ulogirajte se!</h2>
+        <p>
+            Ulogirajte se u svoj korisnički račun kako biste pristupili svojoj košarici i nastavili s kupovinom. 
+        </p>
       </div>
-    </div>
-    <div class="container layout_padding2">
-      <div class="row">
-        <div class="col-md-5">
-          <div class="form_contaier">
-            <form>
-              <div class="form-group">
-                <label for="exampleInputName1">Ime i Prezime</label>
-                <input type="text" class="form-control" id="exampleInputName1">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputNumber1">Broj mobitela</label>
-                <input type="text" class="form-control" id="exampleInputNumber1">
-              </div>
 
-              <div class="form-group">
-                <label for="exampleInputEmail1">E-pošta</label>
-                <input type="email" class="form-control" id="exampleInputEmail1">
-              </div>
-              <div class="form-group ">
-                <!-- <label for="inputState">Select medicine</label>
-                <select id="inputState" class="form-control">
-                  <option selected>Medicine 1</option>
-                  <option selected>Medicine 2</option>
-                  <option selected>Medicine 3</option> -->
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputMessage">Poruka</label>
-                <input type="text" class="form-control" id="exampleInputMessage">
-              </div>
-              <button type="submit" class="">Pošaljite upit</button>
-            </form>
-          </div>
-        </div>
-        <div class="col-md-7">
-          <div class="detail-box">
-            <h3>
-              Brzo ostvarite kontakt s našim reprezentativcima!
-            </h3>
-            <p>
-              Pošaljite upit na web formi i u roku od 24 sata će te dobiti odgovor 
-            </p>
-          </div>
-        </div>
-      </div>
+
+      
+      
     </div>
+    
+
+<form action="/action_page.php" method="post">
+  
+
+  <div class="container">
+    <label for="uname"><b>Korisničko ime:</b></label>
+    <input type="text" placeholder="Korisničko ime" name="uname" required>
+
+    <label for="psw"><b>Lozinka:</b></label>
+    <input type="password" placeholder="Lozinka" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Zapamti
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Poništi</button>
+    <span class="psw">Zaboravili ste <a href="#">lozinku?</a></span>
+  </div>
+</form>
   </section>
 
-  <!-- end contact section -->
+
 
   <!-- info section -->
   <section class="info_section layout_padding2">
@@ -251,14 +279,11 @@
     </div>
   </section>
 
-
-  <!-- end info section -->
-
   <!-- footer section -->
   <section class="container-fluid footer_section">
     <p>
-      &copy; 2022 All Rights Reserved. Powered by
-      <a href="https://html.design/"> <b>Majic Engineering</b></a>
+      &copy; 2019 All Rights Reserved. Design by
+      <a href="https://html.design/">Free Html Templates</a>
     </p>
   </section>
   <!-- footer section -->

@@ -734,6 +734,7 @@ a:focus {
 }
 
 .contact_section .form_contaier form .form-group {
+  margin-left: 150px;
   margin-bottom: 20px;
 }
 
@@ -847,5 +848,8 @@ a:focus {
   color: #fbfcfd;
 }
 
+.testisi{
+  margin-left: 150px;
+}
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
